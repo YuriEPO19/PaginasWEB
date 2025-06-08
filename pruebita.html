@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Básica</title> 
+    <style> /*se generan las hojas de estilos (esto es un comentario en CSS hojas de estilo)*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+       header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: rigth;
+        }
+	header h1 {
+      		font-size: 30px;
+      		margin-bottom: 100px;
+		text-align: rigth;
+
+    }
+        nav {
+            background: #444;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background: pink;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+	.contenedor{
+   	            display: flex;
+        	    flex-wrap: grap;
+            	    gap: 10px;
+         }
+
+	.contenedor img{
+			width: 200px;
+			height: auto;
+			border: 2px solid #ccc;
+			border-radius: 8px;
+	}
+    
+header {
+    background-image: url('banner-bienvenida.jpg');
+    background-size: cover; /* ajusta el tamaño */
+    background-position: center;
+    height: 200px; /* o el alto que prefieras */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado (esto es un comentario en HTML ) -->
+    <header>
+       
+         
+ 
+    <h1 style="font-family: 'Times New Roman', serif;">ELEGANCE</h1>  <!-- Genera solo un tipo de letra solo en el h1 de forma específica, pero no es lo mas recomendable si vas a utilizar varios estilos de la mimsa fuente -->
+
+ </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="Contactanos.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi sitio web donde comparto información interesante.</p>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de</h2>
+            <p>Somos un equipo apasionado por la tecnología y el desarrollo web.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+<div class="contenedor">
+        
+                <img src="imagen1.jpg" alt="1">
+         
+                <img src="imagen2.jpg" alt="2">
+           
+                <img src="imagen3.jpg" alt="3">    
+    </div>
+
+<ul>
+                <li>Diseño Web</li>
+                <li>Desarrollo de Aplicaciones</li>
+                <li>Consultoría Tecnológica</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
